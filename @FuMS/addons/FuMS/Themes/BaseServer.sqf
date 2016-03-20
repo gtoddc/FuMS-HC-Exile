@@ -10,7 +10,7 @@ FuMS_ServerData =
            // NOTE: setting to 'true' may drasticly impact server performance.
        "testpath",                 // MySQL support testing
 		true,				//Enable AdminControls! See Docs\AdminControls.txt
-         15   //minimum Server FPS. Below this FPS FuMS will not load new missions. 
+         30   //minimum Server FPS. Below this FPS FuMS will not load new missions. 
     ],
     [  // Exclusion Areas
     // See \FuMS\HC\Util\GetWorldInfo.sqf if you need to make changes
@@ -32,7 +32,7 @@ FuMS_ServerData =
       ["SEM",-1], // basic old school Arma2 Epoch encounters
    ["TownRaid",-1], // random town is raided by 4 truck loads of humans!
     ["Small",-1],  // 6 man groups invade a random village
-   ["Aquatic",-1], // 3 coastal areas w/ boats and ai   
+   //["Aquatic",-1], // 3 coastal areas w/ boats and ai   
      ["Convoy",-1], // 2 random convoys of 3 vehicles move across the map.
   ["StaticSpawns",-1], // creates 10 Dayz style Helo crashes at random locations.
     //    ["Jurassic",-1], // creates 3 encounters with wondering Raptors and some scattered loot.
@@ -63,14 +63,14 @@ FuMS_ServerData =
 		  // if unique AI are desired, modify these numbers in GlobalSoldierData.sqf or SoldierData.sqf as applicable.
 		  // values here OVERRIDE any value set in the other files! (value of zero = use other files values).
 		[
-		.8, // aimingAccuracy .05 : target lead, bullet drop, recoil
-		.9,	// aimingShake .9 : how steady AI can hold a weapon
-		.5,	// aimingSpeed .1 : how quick AI can rotate and stabilize its aim and shoot.
-		.9,	// spotDistance .5 : affects ability to spot visually and audibly and the accuracy of the information
-		.8,	// spotTime .5 : affects how quick AI reacts to death, damage or observing an enemy.
-		.9,	// courage .1 : affects unit's subordinates morale
-		.5,	// reloadSpeed .5 :affects delay between weapon switching and reloading
-		.8	// commanding .5 : how quickly recognized targets are shared with the AI's group.
+		0, // aimingAccuracy .05 : target lead, bullet drop, recoil
+		0,	// aimingShake .9 : how steady AI can hold a weapon
+		0,	// aimingSpeed .1 : how quick AI can rotate and stabilize its aim and shoot.
+		0,	// spotDistance .5 : affects ability to spot visually and audibly and the accuracy of the information
+		0,	// spotTime .5 : affects how quick AI reacts to death, damage or observing an enemy.
+		0,	// courage .1 : affects unit's subordinates morale
+		0,	// reloadSpeed .5 :affects delay between weapon switching and reloading
+		0	// commanding .5 : how quickly recognized targets are shared wh the AI's group.
 		],
         // soldier only equipment. Items in this list are only available to AI.
         //  when an AI dies, gear on this list is deleted from the AI's inventory.
@@ -79,8 +79,8 @@ FuMS_ServerData =
             [], // Vests
             [], // Backpacks.
             [], // Helmets
-            ["launch_RPG32_F","launch_I_Titan_F"], // Weapons
-            ["RPG32_HE_F","RPG32_F","Titan_AA"], // Magazines
+            ["launch_RPG32_F"/*,"launch_I_Titan_F"*/], // Weapons
+            ["RPG32_HE_F","RPG32_F"/*,"Titan_AA"*/], // Magazines
             [] // Items
         ],
         // List of UAV and UGV's that FuMS will recognize and populate with proper AI logic when created in the vehicle section of missions.
@@ -114,7 +114,7 @@ FuMS_ServerData =
 		[  // SMOKE BOX Options
             true, // true= smoke created with box for ease of location.
             100,  // proximity character has to get to box before smokes start. 0=unlimited
-           ["Red","Blue"],  //["Red","Blue","White"]// colors of smoke
+           ["Red","Blue","White"],  //["Red","Blue","White"]// colors of smoke
              1     // Duration, in minutes, smoke lasts once triggered.
           ],
 		true,  // vehicles occupied by players persist through server reset and are sellable!

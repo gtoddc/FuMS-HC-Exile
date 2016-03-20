@@ -21,7 +21,7 @@ _soldierData =
 [
     [
         "Sniper",
-		[.08, .9, .1, .5, .5, .1, .1, .5], // Soldier skill levels
+		[.08, .6, .1, .5, .5, .1, .1, .5], // Soldier skill levels
         [FuMS_U_Ghillie,1], // Uniform
         [FuMS_V_Vests,.5], // Vest.
         [FuMS_H_MilitaryCaps,.5], // Helmet.
@@ -50,7 +50,7 @@ _soldierData =
         ]
     ],[
         "Rifleman",
-        [.05, .9, .1, .5, .5, .1, .1, .5],
+        [.05, .6, .1, .5, .5, .1, .1, .5],
         [FuMS_U_Soldier,1], // Uniform
         [FuMS_V_Harness,.5], // Vest.
         [FuMS_H_Military,.5], // Helmet
@@ -69,7 +69,7 @@ _soldierData =
         ]
     ],[
         "LMG",
-        [.05, .9, .1, .5, .5, .1, .1, .5],
+        [.05, .7, .1, .5, .5, .1, .1, .5],
         [FuMS_U_Soldier,1], // Uniform
         [FuMS_V_Harness,.5], // Vest.
         [FuMS_H_Military,.5], // Helmet.
@@ -88,7 +88,7 @@ _soldierData =
         ]
     ],[
         "Hunter",
-        [.03, .9, .1, .5, .5, .1, .1, .5],
+        [.03, .7, .1, .5, .5, .1, .1, .5],
         [FuMS_U_Guerilla,1], // Uniform
         [FuMS_V_Bandolliers,.2], // Vest.
         [FuMS_H_Hunter,.8], // Helmet.
@@ -107,7 +107,7 @@ _soldierData =
         ]
     ],[
         "Diver",
-        [.05, .9, .1, .5, .5, .1, .1, .5],
+        [.05, .7, .1, .5, .5, .1, .1, .5],
         [FuMS_U_Wetsuit,1], // Uniform
         [FuMS_V_Rebreather,1], // Vest.
         [FuMS_H_Bandannas,.2], // Helmet
@@ -124,7 +124,7 @@ _soldierData =
             ["RESPECT", 10]
         ]
     ],[
-        "Driver",[.05, .9, .1, .5, .5, .1, .1, .5],
+        "Driver",[.05, .7, .1, .5, .5, .1, .1, .5],
         [FuMS_U_Soldier,1], // Uniform
         [FuMS_V_Chestrig,.1], // Vest.
         [FuMS_H_Military,.8], // Helmet
@@ -141,7 +141,7 @@ _soldierData =
             ["RESPECT", 10]
         ]
     ],[
-        "Pilot",[.05, .9, .1, .5, .5, .1, .1, .5],
+        "Pilot",[.05, .7, .1, .5, .5, .1, .1, .5],
         [FuMS_U_Aviation,1], // Uniform
         [FuMS_V_Chestrig,.8], // Vest.
         [FuMS_H_Aviation,1], // Helmet

@@ -8,9 +8,9 @@ _themeData =
 [
     [  // *******Options*********
         "HeloPatrols", // Needs to match the folder name!
-        5,  //Mission Selection: 1=Random, 2=In order, 3=Random:once only until all missions run
+        1,  //Mission Selection: 1=Random, 2=In order, 3=Random:once only until all missions run
              // 4=Static: All missions in 'Mission List' will be created at server start!
-        60, // Respawn delay in seconds
+        900, // Respawn delay in seconds
 		true, // Use global loot data
 		true, // Use global soldier data
 		true, // Autostart
